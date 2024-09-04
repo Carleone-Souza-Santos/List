@@ -23,6 +23,7 @@ export const App = () => {
     if (input) {
       setList([...list, { id: Uuid(), task: input, finished: false }]);
     }
+    setInput('');
   };
 
   const finalTask = (id) => {
